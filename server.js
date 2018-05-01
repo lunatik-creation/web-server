@@ -19,7 +19,7 @@ app.use(milddleware.logger);
 // });
 
 app.get('/about', milddleware.requireAuthentification, function(req, res) {
-  res.send('Our About Us page !');
+  res.send('Our About Us page');
 });
 
 app.use(express.static(__dirname + '/public'));
