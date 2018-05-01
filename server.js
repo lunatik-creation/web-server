@@ -1,24 +1,11 @@
 var express = require('express');
 var app = express();
-var PORT = 3000;
-var milddleware = {
-  requireAuthentification: function(req, res, next) {
-    console.log('Private route hit');
-    next();
-  },
-  logger: function(req, res, next) {
-    console.log('Request ' + req.method + ' ' + req.originalUrl + ' made on ' + new Date().toString());
-    next();
-  }
-};
+var PORT = process.env.PORT || 3000;
+var middleware = require('./middleware.js');
 
-app.use(milddleware.logger);
+app.use(middleware.logger);
 
-// app.get('/', function(req, res) {
-//   res.send('Hello Express !');
-// });
-
-app.get('/about', milddleware.requireAuthentification, function(req, res) {
+app.get('/about', middleware.requireAuthentification, function(req, res) {
   res.send('Our About Us page');
 });
 
