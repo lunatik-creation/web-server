@@ -1,0 +1,31 @@
+.food > h2:hover,.txt > h3:hover,.our-menu > h3:hover{
+   background: linear-gradient(maroon,#6B1C32,#AF022F);
+   cursor: pointer;
+}
+
+.right-img {
+  border-radius: 10px;
+  border: 2px solid #E9CB75 ;
+}
+
+.row-child:hover{
+  height: 310px;
+}
+
+.more{
+background: linear-gradient(#AF022F,maroon,#6B1C32);
+  border: 2px solid #AF022F;
+  border-radius: 25px;
+  padding: 20px;
+  color:#fff;
+  width: 40px;
+  height: 15px;
+  text-align: center;
+  font-weight: bold;
+  float: right;
+}
+
+.more:hover{
+  background: linear-gradient(maroon,#6B1C32,#AF022F);
+  border: 2px solid #fff;
+}
