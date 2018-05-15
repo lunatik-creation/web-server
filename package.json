@@ -1,14 +1,21 @@
 {
-  "name": "web-server",
+  "name": "todo-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "\"My first Api\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
-  "author": "",
+  "author": "Lunatik Creation",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.2"
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "pg": "*",
+    "pg-hstore": "*",
+    "sequelize": "^3.5.1",
+    "sqlite3": "^3.0.10",
+    "underscore": "^1.8.3"
   }
 }
